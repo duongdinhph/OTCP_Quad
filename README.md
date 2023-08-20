@@ -12,8 +12,7 @@ simulation results are provided to illustrate the effectiveness of the proposed 
   2.1. Position Controller with Off-policy RL
   2.2. Attitude Controller with Off-policy RL
 3. Simulation
-
-Consider a quadrotor with the desired trajectory is a spiral trajectory
+Consider a quadrotor with the desired trajectory as a spiral trajectory
 In the first stage, we use 2 PID controllers for both outer and inner loops to collect data for the next
 stage of training to obtain the optimal controllers. Note that noises are added to the system to guarantee
 the PE condition.
@@ -22,3 +21,10 @@ Then, we use the data as the input to the algorithms which are proposed in the p
 convergences of the weights are shown in Fig 4.
 After we obtain the weights, estimated optimal controllers are applied to the object. The tracking
 performance is illustrated in Fig 5.
+4. Conclusion
+In this project, a novel control strategy that consists of the Off-policy RL algorithm was proposed. By
+collecting data to train two actor-critic networks (NNs) which aim to estimate the optimal controllers
+which includes a position controller and attitude controller, this structure has the advantage of no need
+of any prior information on the high coupling system. Finally, simulation results are provided to
+illustrate the tracking performance of a sophisticated trajectory of the system.
+
