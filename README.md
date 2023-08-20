@@ -12,6 +12,7 @@ simulation results are provided to illustrate the effectiveness of the proposed 
   2.1. Position Controller with Off-policy RL
   2.2. Attitude Controller with Off-policy RL
 3. Simulation
+
 Consider a quadrotor with the desired trajectory is a spiral trajectory
 In the first stage, we use 2 PID controllers for both outer and inner loops to collect data for the next
 stage of training to obtain the optimal controllers. Note that noises are added to the system to guarantee
