@@ -23,11 +23,13 @@ The position of the center of mass is $p = [p_x,p_y,p_z]^T \in \mathbb{R}^3$. Th
   
 # 3. Simulation
 ![3D_tracking](https://github.com/duongdinhph/OTCP_Quad/assets/56771011/af2a8f56-eb79-42a8-b9a3-ebe06947d5d0)
+
 Consider a quadrotor with the desired trajectory as a spiral trajectory
 In the first stage, we use 2 PID controllers for both outer and inner loops to collect data for the next
 stage of training to obtain the optimal controllers. Note that noises are added to the system to guarantee
 the PE condition.
 ![trajectory](https://github.com/duongdinhph/OTCP_Quad/assets/56771011/f897a547-6174-4f9d-89cb-ae739c857a10)
+
 The position tracking error in this stage is illustrated in Fig 3.
 Then, we use the data as the input to the algorithms which are proposed in the previous section. The
 convergences of the weights are shown in Fig 4.
