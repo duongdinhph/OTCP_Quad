@@ -36,5 +36,5 @@ of any prior information on the high coupling system. Finally, simulation result
 illustrate the tracking performance of a sophisticated trajectory of the system.
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[figure1]: images/quad_schematic.png
+[figure1]: figure/quad_schematic.png
 
