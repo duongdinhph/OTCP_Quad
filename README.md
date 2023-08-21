@@ -8,6 +8,14 @@ using an actor-critic network (NNs) to solve the optimal tracking trajectory pro
 simulation results are provided to illustrate the effectiveness of the proposed method.
 
 # 1. Problem Statement
+In this section, we present the model of the quadrotor and the traditional control scheme. A quadrotor could be described with dynamic equations:
+\begin{equation}
+	\label{equa4:4.6}
+	\begin{aligned}
+		m\ddot{p} &=  T_pRe_{3,3} - mge_{3,3} \\
+		J\ddot{\Theta} &= \tau - C(\Theta,\dot{\Theta})\dot{\Theta}
+	\end{aligned}
+\end{equation}
 # 2. Proposed Control Strategy
   # 2.1. Position Controller with Off-policy RL
   # 2.2. Attitude Controller with Off-policy RL
