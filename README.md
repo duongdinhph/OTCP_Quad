@@ -10,8 +10,8 @@ simulation results are provided to illustrate the effectiveness of the proposed 
 # 1. Problem Statement
 In this section, we present the model of the quadrotor and the traditional control scheme. A quadrotor could be described with dynamic equations:
 
-$$ m\ddot{p} &=  T_pRe_{3,3} - mge_{3,3} \\
-J\ddot{\Theta} &= \tau - C(\Theta,\dot{\Theta})\dot{\Theta} $$
+$$ m\ddot{p} =  T_pRe_{3,3} - mge_{3,3} \\
+J\ddot{\Theta} = \tau - C(\Theta,\dot{\Theta})\dot{\Theta} $$
 
 # 2. Proposed Control Strategy
   # 2.1. Position Controller with Off-policy RL
