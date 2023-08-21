@@ -9,7 +9,7 @@ simulation results are provided to illustrate the effectiveness of the proposed 
 
 # 1. Problem Statement
 In this section, we present the model of the quadrotor and the traditional control scheme. A quadrotor could be described with dynamic equations:
-$$ m\ddot{p} =  T_pRe_{3,3} - mge_{3,3} $$
+$$` m\ddot{p} =  T_pRe_{3,3} - mge_{3,3} `$$
 Where: 
 The position of the center of mass is $p = [p_x,p_y,p_z]^T \in \mathbb{R}^3$. The Euler angles $\Theta = [\phi, \theta, \psi]$. $e_{i,j}$ is the vector which has $i$ numbers of zeros except for number 1 in the $j^{th}$ position.
 
