@@ -14,8 +14,8 @@ Where:
 The position of the center of mass is $p = [p_x,p_y,p_z]^T \in \mathbb{R}^3$. The Euler angles $\Theta = [\phi, \theta, \psi]$. $e_{i,j}$ is the vector which has $i$ numbers of zeros except for number 1 in the $j^{th}$ position.
 
 # 2. Proposed Control Strategy
-  # 2.1. Position Controller with Off-policy RL
-  # 2.2. Attitude Controller with Off-policy RL
+  ## 2.1. Position Controller with Off-policy RL
+  ## 2.2. Attitude Controller with Off-policy RL
 # 3. Simulation
 Consider a quadrotor with the desired trajectory as a spiral trajectory
 In the first stage, we use 2 PID controllers for both outer and inner loops to collect data for the next
