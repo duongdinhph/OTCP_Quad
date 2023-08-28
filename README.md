@@ -10,8 +10,7 @@ simulation results are provided to illustrate the effectiveness of the proposed 
 # 1. Problem Statement
 ![quad_schematic](https://github.com/duongdinhph/OTCP_Quad/assets/56771011/9de3f13d-e145-4d17-8df4-7d9a2c6e777b)
 
-In this section, we present the model of the quadrotor and the traditional control scheme. A quadrotor could be described with dynamic equations:
-$ m =  T_pRe_{3,3} - mge_{3,3} $
+In this section, we present the model of the quadrotor and the traditional control scheme. A quadrotor could be described with dynamic equations:$ m =  T_pRe_{3,3} - mge_{3,3} $
 Where: 
 The position of the center of mass is $p = [p_x,p_y,p_z]^T \in \mathbb{R}^3$. The Euler angles $\Theta = [\phi, \theta, \psi]$. $e_{i,j}$ is the vector which has $i$ numbers of zeros except for number 1 in the $j^{th}$ position.
 
