@@ -1,4 +1,4 @@
-# Optimal tracking control for unknown-dynamics quadrotor with an Off-policy Reinforcement Learning algorithm
+![TWSR_image](https://github.com/duongdinhph/OTCP_Quad/assets/56771011/291281f7-f7fb-4c3b-b21d-49c99908e71c)# Optimal tracking control for unknown-dynamics quadrotor with an Off-policy Reinforcement Learning algorithm
 An Off-policy Reinforcement Learning Algorithm for Optimal Tracking Control Problem       
 Full report: [link](https://drive.google.com/drive/folders/1LOUQExAoRkOGeKZ26fC8hELxbSGDK5ZK)
 # Introduction
@@ -32,6 +32,8 @@ the PE condition.
 
 ![trajectory](https://github.com/duongdinhph/OTCP_Quad/assets/56771011/f897a547-6174-4f9d-89cb-ae739c857a10)
 
+![trajectory2](![TWSR_image](https://github.com/duongdinhph/OTCP_Quad/assets/56771011/54b076f5-62ba-4829-b423-fb70d64deb81)
+)
 The position tracking error in this stage is illustrated in the figure above.
 Then, we use the data as the input to the algorithms which are proposed in the previous section. The
 convergences of the weights are shown in figure above.
