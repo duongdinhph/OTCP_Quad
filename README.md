@@ -23,20 +23,18 @@ The position of the center of mass is $p = [p_x,p_y,p_z]^T \in \mathbb{R}^3$. Th
   ## 2.2. Attitude Controller with Off-policy RL
   
 # 3. Simulation
-![3D_tracking](https://github.com/duongdinhph/OTCP_Quad/assets/56771011/af2a8f56-eb79-42a8-b9a3-ebe06947d5d0)
+![3D_tracking_skew](https://github.com/duongdinhph/OTCP_Quad/assets/56771011/5f818f3d-f018-494b-a6ec-4f97d2e55295)
 
 Consider a quadrotor with the desired trajectory as a spiral trajectory
 In the first stage, we use 2 PID controllers for both outer and inner loops to collect data for the next
 stage of training to obtain the optimal controllers. Note that noises are added to the system to guarantee
 the PE condition.
 
-![trajectory](https://github.com/duongdinhph/OTCP_Quad/assets/56771011/f897a547-6174-4f9d-89cb-ae739c857a10)
+![xyz_wrt_ref](https://github.com/duongdinhph/OTCP_Quad/assets/56771011/be6b3386-5f5b-419b-b4d3-0e306fc9f110)
 
-![trajectory2](![TWSR_image](https://github.com/duongdinhph/OTCP_Quad/assets/56771011/54b076f5-62ba-4829-b423-fb70d64deb81)
-)
 The position tracking error in this stage is illustrated in the figure above.
 Then, we use the data as the input to the algorithms which are proposed in the previous section. The
-convergences of the weights are shown in figure above.
+convergences of the weights are shown in the figure above.
 After we obtain the weights, estimated optimal controllers are applied to the object. The tracking
 performance is illustrated in figure above.
 # 4. Conclusion
