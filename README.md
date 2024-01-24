@@ -1,4 +1,4 @@
-![TWSR_image](https://github.com/duongdinhph/OTCP_Quad/assets/56771011/291281f7-f7fb-4c3b-b21d-49c99908e71c)# Optimal tracking control for unknown-dynamics quadrotor with an Off-policy Reinforcement Learning algorithm
+# Optimal tracking control for unknown-dynamics quadrotor with an Off-policy Reinforcement Learning algorithm
 An Off-policy Reinforcement Learning Algorithm for Optimal Tracking Control Problem       
 Full report: [link](https://drive.google.com/drive/folders/1LOUQExAoRkOGeKZ26fC8hELxbSGDK5ZK)
 # Introduction
