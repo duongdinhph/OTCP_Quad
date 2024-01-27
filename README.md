@@ -10,7 +10,8 @@ In this project, the optimal tracking control problem (OTCP) for the quadrotor w
 In this section, we present the quadrotor model and the traditional control scheme. A quadrotor could be described with dynamic equations: $$m \ddot{p} = T_p R e_{3,3} - m g e_{3,3} $$
 
 Where:   
-The position of the center of mass is $p = [p_x,p_y,p_z]^T \in \mathbb{R}^3$. The Euler angles $\Theta = [\phi, \theta, \psi]$. $e_{i,j}$ is the vector which has $i$ numbers of zeros except for number 1 in the $j^{th}$ position.
+* The position of the center of mass is $p = [p_x,p_y,p_z]^T \in \mathbb{R}^3$
+* The Euler angles $\Theta = [\phi, \theta, \psi]$. $e_{i,j}$ is the vector which has $i$ numbers of zeros except for number 1 in the $j^{th}$ position.
 
 # 2. Proposed Control Strategy
 ![Quad_Control_Diagram](https://github.com/duongdinhph/OTCP_Quad/assets/56771011/306f37f3-1ca5-46a6-9e22-f797f3e7797e)
