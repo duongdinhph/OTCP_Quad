@@ -2,24 +2,12 @@
 An Off-policy Reinforcement Learning Algorithm for Optimal Tracking Control Problem       
 Full report: [link](https://drive.google.com/drive/folders/1LOUQExAoRkOGeKZ26fC8hELxbSGDK5ZK)
 # 1. Introduction
-This project presents a comprehensive approach to integrating formation tracking control and optimal control for a fleet of multiple surface vehicles (SVs),
-accounting for both kinematic and dynamic models of each SV agent. The
-proposed control framework comprises two core components: a high-level
-displacement-based formation controller and a low-level reinforcement learning (RL)-based optimal control strategy for individual SV agents. The high-level
-formation control law, employing a modified gradient method, is introduced to
-guide the SVs in achieving desired formations. Meanwhile, the low-level control structure, featuring time-varying references, incorporates the RL algorithm
-by transforming the time-varying closed agent system into an equivalent
-autonomous system. The application of Lyapunov’s direct approach, along with
-the existence of the Bellman function, guarantees the stability and optimality of
-the proposed design. Through extensive numerical simulations, encompassing
-various comparisons and scenarios, this study demonstrates the efficacy of the
-novel formation control strategy for multiple SV agent systems, showcasing its
-potential for real-world applications.
+In this project, the optimal tracking control problem (OTCP) for the quadrotor which is a highly coupling system with completely unknown dynamics is addressed based on data by introducing the reinforcement learning (RL) technique. The proposed Off-policy RL algorithm does not need any knowledge of the quadrotor model. By collecting data, which is the states and control inputs of the quadrotor system, then using an actor-critic network (NNs) to approximate the optimal controller, OTCP for the quadrotor is resolved. Finally, simulation results are provided to illustrate the effectiveness of the proposed method.
 
-# 2. Proposed Control scheme
+# 2. Problem Statement
 
 
-In this section, we present the model of the quadrotor and the traditional control scheme. A quadrotor could be described with dynamic equations: $m = T_p R e_{3,3} - m g e_{3,3} $
+In this section, we present the quadrotor model and the traditional control scheme. A quadrotor could be described with dynamic equations: $m = T_p R e_{3,3} - m g e_{3,3} $
 
 Where: 
 The position of the center of mass is $p = [p_x,p_y,p_z]^T \in \mathbb{R}^3$. The Euler angles $\Theta = [\phi, \theta, \psi]$. $e_{i,j}$ is the vector which has $i$ numbers of zeros except for number 1 in the $j^{th}$ position.
