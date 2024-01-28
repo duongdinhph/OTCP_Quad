@@ -28,7 +28,8 @@ Stop iterating if $\| u^{i+1}-u^i \| < \epsilon$, otherwise: update $u^i = u^{i+
 ![quad_schematic](https://github.com/duongdinhph/OTCP_Quad/assets/56771011/8a8c3980-18f1-42e6-90e9-5f29923f5434)   
 A quadrotor could be described with dynamic equations:   
 $$m \ddot{p} = T_p R e_{3,3} - m g e_{3,3} $$   
-$$J\ddot{\Theta} = \tau - C(\Theta,\dot{\Theta})\dot{\Theta}$$
+$$J\ddot{\Theta} = \tau - C(\Theta,\dot{\Theta})\dot{\Theta}$$   
+
 Where:   
 * The position of the center of mass is $p = [p_x,p_y,p_z]^T \in \mathbb{R}^3$
 * The Euler angles $\Theta = [\phi, \theta, \psi]$.
