@@ -71,8 +71,8 @@ Consider a quadrotor with the desired trajectory as a spiral trajectory
 In the first stage, we use 2 PID controllers for both outer and inner loops to collect data for the next
 stage of training to obtain the optimal controllers. Note that noises are added to the system to guarantee
 the PE condition. The position and attitude tracking error in this stage is illustrated in the figures below.   
-![ini_e_p](https://github.com/duongdinhph/OTCP_Quad/assets/56771011/1ca120b3-983e-4208-ae59-06c62c7afd61 | width=100)
-![init_e_Teta](https://github.com/duongdinhph/OTCP_Quad/assets/56771011/fcceb177-cecb-4968-9429-ea8589c4b0dc | width=100)
+![ini_e_p](https://github.com/duongdinhph/OTCP_Quad/assets/56771011/e4457211-f513-418b-82c8-211ac768bb05)
+![init_e_Teta](https://github.com/duongdinhph/OTCP_Quad/assets/56771011/fcceb177-cecb-4968-9429-ea8589c4b0dc)
 
 In the second stage, we use the data as the input to the RL algorithms proposed in the previous section. The convergence of the weights is shown in the figures below.   
 ![conver_p](https://github.com/duongdinhph/OTCP_Quad/assets/56771011/4cd36ea7-d1dd-4869-a8c5-257a7421a823)
