@@ -24,7 +24,7 @@ The Rl algorithm comprises 3 steps:
 * Step 1: Init
 Start with a stable control signal $u_0$ and add a noise component $u_e$ to ensure the PE condition. Collect data and determine threshold $\epsilon$
 * Step 2: Policy Evaluation and Policy Improvement:
-$$ V^{i+1}(X(t+\delta t)) &- V^{i+1}(X(t)) =  -\int_{t}^{t+\delta t}[X(\tau)^TQX(\tau)
+$$ V^{i+1}(X(t+\delta t)) - V^{i+1}(X(t)) =  -\int_{t}^{t+\delta t}[X(\tau)^TQX(\tau)
 					+ [u^i(X(\tau))]^TRu^i(X(\tau))]d\tau + \int_{t}^{t+\delta t}\lambda V^{i+1}(X(\tau))d\tau 
 					+ 2\int_{t}^{t+\delta t}[u^{i+1}(X(\tau))]^TR[u^i(X(\tau)) - u(\tau)] d\tau $$
 * Step 3: Checking convergence
