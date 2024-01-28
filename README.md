@@ -59,8 +59,12 @@ where: $x_\Theta = [\phi, \dot{\phi}, \theta, \dot{\theta}, \psi, \dot{\psi}]^T$
 
   ## 3.4. The Actor-Critic Neural Network structure
 The Actor-Critic Neural Network structure is introduced to estimate $V(X)$ and $u(X)$ as follows:   
+
 $$ \hat{V}^i(X) = [w_V^i]^T \varphi(X) $$   
+
+   
 $$ \hat{u}^i(X) = [w_u^i]^T \psi(X) $$   
+
 
 # 4. Simulation
 Consider a quadrotor with the desired trajectory as a spiral trajectory
