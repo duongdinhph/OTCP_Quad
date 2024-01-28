@@ -1,4 +1,4 @@
-# Optimal tracking control for unknown-dynamics quadrotor with an Off-policy Reinforcement Learning algorithm
+# Optimal tracking control for unknown-dynamics quadrotor with an Off-policy Reinforcement Learning(RL) algorithm
 An Off-policy Reinforcement Learning Algorithm for Optimal Tracking Control Problem       
 Full report: [link](https://drive.google.com/drive/folders/1LOUQExAoRkOGeKZ26fC8hELxbSGDK5ZK)
 # 1. Introduction
@@ -15,7 +15,32 @@ Where:
 * The Euler angles $\Theta = [\phi, \theta, \psi]$.
 * $e_{i,j}$ is the vector which has $i$ numbers of zeros except for number 1 in the $j^{th}$ position.
 
-# 2. Proposed Control Strategy
+# 3. RL algorithm for Optimal tracking control problem of the affine system:
+* Non-linear aﬀine system:
+$$\dot{X}(t) = F(X(t)) + G(X(t))u(t)$$
+* The cost function:
+$$V(X(t))=\int_{t}^{\infty}e^{-\lambda(\tau-t)}[X(\tau)^TQX(\tau)+u(\tau)^TRu(\tau)]d\tau$$
+The Rl algorithm comprises 3 steps:
+* Step 1: Init
+Start with a stable control signal $u_0$ and add a noise component $u_e$ to ensure the PE condition. Collect data and determine threshold $\epsilon$
+* Step 2: Policy Evaluation and Policy Improvement:
+$$ V^{i+1}(X(t+\delta t)) &- V^{i+1}(X(t)) =  -\int_{t}^{t+\delta t}[X(\tau)^TQX(\tau)
+					+ [u^i(X(\tau))]^TRu^i(X(\tau))]d\tau + \int_{t}^{t+\delta t}\lambda V^{i+1}(X(\tau))d\tau 
+					+ 2\int_{t}^{t+\delta t}[u^{i+1}(X(\tau))]^TR[u^i(X(\tau)) - u(\tau)] d\tau $$
+* Step 3: Checking convergence
+Stop iterating if $\| u^{i+1}-u^i \| < \epsilon$, otherwise: update $u^i = u^{i+1}$, return to step (2).
+
+
+
+  
+
+
+
+
+
+
+
+# 4. The proposed control scheme applied for a quadrotor:
 ![Quad_Control_Diagram](https://github.com/duongdinhph/OTCP_Quad/assets/56771011/306f37f3-1ca5-46a6-9e22-f797f3e7797e)
   ## 2.1. Position Controller with Off-policy RL
   
