@@ -52,6 +52,8 @@ Rewrite the attitude equation in the form of an affine system:
 
 $$ \dot{x_\Theta} = F_\Theta x_\Theta + B_\Theta u_\Theta $$   
 
+where: $x_\Theta = [\phi, \dot{\phi}, \theta, \dot{\theta}, \psi, \dot{\psi}]^T$
+
 
 
 
