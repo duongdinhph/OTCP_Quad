@@ -50,7 +50,7 @@ where: $x_p = [p_x, \dot{p}_x, p_y, \dot{p}_y, p_z, \dot{p}_z]^T$
   ## 3.3. Attitude Controller with Off-policy RL
 Rewrite the attitude equation in the form of an affine system:   
 
-$$ \dot{x}_\Theta = F_$$   
+$$ \dot{x}_{\Theta} = F_$$   
 
 
 
