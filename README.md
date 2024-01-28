@@ -35,7 +35,7 @@ Where:
 * $e_{i,j}$ is the vector which has $i$ numbers of zeros except for number 1 in the $j^{th}$ position.
 * $J = diag(J_x, J_y, J_z)$
 
-A typical control scheme for quadrotor consists of a Position controller which generates desired trajectory for the inner control loop and an Attitude controller which tracks the desired attitude angles obtained from the outer loop control.   
+A typical control scheme for a quadrotor consists of a Position controller which generates desired trajectory for the inner control loop and an Attitude controller which tracks the desired attitude angles obtained from the outer loop control.   
 
 ![Quad_Control_Diagram](https://github.com/duongdinhph/OTCP_Quad/assets/56771011/306f37f3-1ca5-46a6-9e22-f797f3e7797e)   
 
@@ -50,7 +50,7 @@ where: $x_p = [p_x, \dot{p}_x, p_y, \dot{p}_y, p_z, \dot{p}_z]^T$
   ## 3.3. Attitude Controller with Off-policy RL
 Rewrite the attitude equation in the form of an affine system:   
 
-$$ \dot{x}_\Theta = F_{\Theta}$$   
+$$ \dot{x}_\Theta = F_$$   
 
 
 
