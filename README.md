@@ -6,6 +6,7 @@ In this project, the optimal tracking control problem (OTCP) for the quadrotor w
 
 # 2. Problem Statement
 
+![quad_schematic](https://github.com/duongdinhph/OTCP_Quad/assets/56771011/8a8c3980-18f1-42e6-90e9-5f29923f5434)   
 
 In this section, we present the quadrotor model and the traditional control scheme. A quadrotor could be described with dynamic equations: $$m \ddot{p} = T_p R e_{3,3} - m g e_{3,3} $$
 
