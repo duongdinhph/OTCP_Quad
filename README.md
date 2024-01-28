@@ -45,14 +45,12 @@ Rewrite the position equation in the form of an affine system:
 
 $$ \dot{x}_p = A_p x_p + B_p u_p $$   
 
-$$ $\dot{x}_\Theta = F_\Theta x_\Theta + B_\Theta u_\Theta $$   
-
-
 where: $x_p = [p_x, \dot{p}_x, p_y, \dot{p}_y, p_z, \dot{p}_z]^T$   
 
   ## 3.3. Attitude Controller with Off-policy RL
-Rewrite the attitude equation in the form of an affine system: 
+Rewrite the attitude equation in the form of an affine system:   
 
+$$ $\dot{x} = F_\Theta x_\Theta + B_\Theta u_\Theta $$   
 
 
 
