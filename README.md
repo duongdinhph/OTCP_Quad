@@ -49,7 +49,9 @@ where: $x_p = [p_x, \dot{p}_x, p_y, \dot{p}_y, p_z, \dot{p}_z]^T$
 
   ## 3.3. Attitude Controller with Off-policy RL
 Rewrite the attitude equation in the form of an affine system:   
-$$ \dot{x} = F_\Theta x_\Theta + B_\Theta u_\Theta $$   
+
+$$\dot{x}_\Theta = F_\Theta x_\Theta + B_\Theta u_\Theta$$   
+
 
 where: $x_\Theta = [\phi, \dot{\phi}, \theta, \dot{\theta}, \psi, \dot{\psi}]^T$   
 
