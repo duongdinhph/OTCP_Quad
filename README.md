@@ -28,7 +28,7 @@ Stop iterating if $\| u^{i+1}-u^i \| < \epsilon$, otherwise: update $u^i = u^{i+
 ![quad_schematic](https://github.com/duongdinhph/OTCP_Quad/assets/56771011/8a8c3980-18f1-42e6-90e9-5f29923f5434)   
 A quadrotor could be described with dynamic equations:   
 $$m \ddot{p} = T_p R e_{3,3} - m g e_{3,3} $$   
-$$J\ddot{\Theta} &= \tau - C(\Theta,\dot{\Theta})\dot{\Theta}$$
+$$J\ddot{\Theta} = \tau - C(\Theta,\dot{\Theta})\dot{\Theta}$$
 Where:   
 * The position of the center of mass is $p = [p_x,p_y,p_z]^T \in \mathbb{R}^3$
 * The Euler angles $\Theta = [\phi, \theta, \psi]$.
@@ -43,21 +43,21 @@ A typical control scheme for quadrotor consists of a Position controller which g
   ## 3.2. Position Controller with Off-policy RL
 Rewrite the position equation in the form of an affine system:   
 
-$$ \dot{x}_p &= A_p x_p + B_p u_p $$   
+$$ \dot{x}_p = A_p x_p + B_p u_p $$   
 
 where: $x_p = [p_x, \dot{p}_x, p_y, \dot{p}_y, p_z, \dot{p}_z]^T$   
 
   ## 3.3. Attitude Controller with Off-policy RL
 Rewrite the position equation in the form of an affine system:   
 
-$$\dot{x}_\Theta &= F_\Theta x_\Theta + B_\Theta u_\Theta$$
+$$\dot{x}_\Theta = F_\Theta x_\Theta + B_\Theta u_\Theta$$
 
 where: $x_\Theta = [\phi, \dot{\phi}, \theta, \dot{\theta}, \psi, \dot{\psi}]^T$   
 
   ## 3.4. The Actor-Critic Neural Network structure
 The Actor-Critic Neural Network structure is introduced to estimate $V(X)$ and $u(X)$ as follows:   
-$$ \hat{V}^i(X) &= [w_V^i]^T \varphi(X) $$   
-$$ \hat{u}^i(X) &= [w_u^i]^T \psi(X) $$   
+$$ \hat{V}^i(X) = [w_V^i]^T \varphi(X) $$   
+$$ \hat{u}^i(X) = [w_u^i]^T \psi(X) $$   
 
 # 4. Simulation
 Consider a quadrotor with the desired trajectory as a spiral trajectory
@@ -85,8 +85,7 @@ The decay lambda has a major impact on the tracking error, which is illustrated 
 
 # 5. Conclusion
 In this project, a novel control strategy that consists of the Off-policy RL algorithm was proposed. By
-collecting data to train two actor-critic networks (NNs) which aim to estimate the optimal controllers
-which includes a position controller and attitude controller, this structure has the advantage of no need
+collecting data to train two actor-critic networks (NNs) which aim to estimate the optimal controllers including a position controller and attitude controller, this structure has the advantage of no need
 of any prior information on the high coupling system. Finally, simulation results are provided to
 illustrate the tracking performance of a sophisticated trajectory of the system.
 
