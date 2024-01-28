@@ -41,16 +41,11 @@ A typical control scheme for a quadrotor consists of a Position controller which
 
 
   ## 3.2. Position Controller with Off-policy RL
-Rewrite the position equation in the form of an affine system:   
-
-$$ \dot{x}_p = A_p x_p + B_p u_p $$   
-
+Rewrite the position equation in the form of an affine system: $ \dot{x}_p = A_p x_p + B_p u_p $   
 where: $x_p = [p_x, \dot{p}_x, p_y, \dot{p}_y, p_z, \dot{p}_z]^T$   
 
   ## 3.3. Attitude Controller with Off-policy RL
-Rewrite the attitude equation in the form of an affine system:   
-
-$$ {A}_{\Theta}$$   
+Rewrite the attitude equation in the form of an affine system: $\dot{x}_\Theta = F_\Theta x_\Theta + B_\Theta u_\Theta $
 
 
 
