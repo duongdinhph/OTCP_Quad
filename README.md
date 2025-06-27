@@ -24,8 +24,10 @@ Stop iterating if $\| u^{i+1}-u^i \| < \epsilon$, otherwise: update $u^i = u^{i+
 
 # 3. The proposed control scheme applied for a quadrotor:
   ## 3.1. Dynamic model and general control scheme
-
-![quad_schematic](https://github.com/duongdinhph/OTCP_Quad/assets/56771011/8a8c3980-18f1-42e6-90e9-5f29923f5434)   
+<div align="center">
+  <img src="https://github.com/duongdinhph/OTCP_Quad/assets/56771011/8a8c3980-18f1-42e6-90e9-5f29923f5434" alt="tca785" width="500">
+</div>
+<!-- ![quad_schematic](https://github.com/duongdinhph/OTCP_Quad/assets/56771011/8a8c3980-18f1-42e6-90e9-5f29923f5434)   s -->
 A quadrotor could be described with dynamic equations:   
 $$m \ddot{p} = T_p R e_{3,3} - m g e_{3,3} $$   
 $$J\ddot{\Theta} = \tau - C(\Theta,\dot{\Theta})\dot{\Theta}$$   
