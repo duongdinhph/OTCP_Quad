@@ -41,7 +41,7 @@ Where:
 A typical control scheme for a quadrotor consists of a Position controller which generates desired trajectory for the inner control loop and an Attitude controller which tracks the desired attitude angles obtained from the outer loop control.  
 
 <div align="center">
-  <img src="https://github.com/duongdinhph/OTCP_Quad/assets/56771011/306f37f3-1ca5-46a6-9e22-f797f3e7797e" alt="" width="900">
+  <img src="https://github.com/duongdinhph/OTCP_Quad/assets/56771011/306f37f3-1ca5-46a6-9e22-f797f3e7797e" alt="" width="800">
 </div> 
 
 
