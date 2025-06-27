@@ -25,9 +25,9 @@ Stop iterating if $\| u^{i+1}-u^i \| < \epsilon$, otherwise: update $u^i = u^{i+
 # 3. The proposed control scheme applied for a quadrotor:
   ## 3.1. Dynamic model and general control scheme
 <div align="center">
-  <img src="https://github.com/duongdinhph/OTCP_Quad/assets/56771011/8a8c3980-18f1-42e6-90e9-5f29923f5434" alt="tca785" width="500">
-</div>
-<!-- ![quad_schematic](https://github.com/duongdinhph/OTCP_Quad/assets/56771011/8a8c3980-18f1-42e6-90e9-5f29923f5434)   s -->
+  <img src="https://github.com/duongdinhph/OTCP_Quad/assets/56771011/8a8c3980-18f1-42e6-90e9-5f29923f5434" alt="" width="700">
+</div>  
+  
 A quadrotor could be described with dynamic equations:   
 $$m \ddot{p} = T_p R e_{3,3} - m g e_{3,3} $$   
 $$J\ddot{\Theta} = \tau - C(\Theta,\dot{\Theta})\dot{\Theta}$$   
@@ -38,9 +38,12 @@ Where:
 * $e_{i,j}$ is the vector which has $i$ numbers of zeros except for number 1 in the $j^{th}$ position.
 * $J = diag(J_x, J_y, J_z)$
 
-A typical control scheme for a quadrotor consists of a Position controller which generates desired trajectory for the inner control loop and an Attitude controller which tracks the desired attitude angles obtained from the outer loop control.   
+A typical control scheme for a quadrotor consists of a Position controller which generates desired trajectory for the inner control loop and an Attitude controller which tracks the desired attitude angles obtained from the outer loop control.  
 
-![Quad_Control_Diagram](https://github.com/duongdinhph/OTCP_Quad/assets/56771011/306f37f3-1ca5-46a6-9e22-f797f3e7797e)   
+<div align="center">
+  <img src="https://github.com/duongdinhph/OTCP_Quad/assets/56771011/306f37f3-1ca5-46a6-9e22-f797f3e7797e" alt="" width="900">
+</div> 
+
 
 
   ## 3.2. Position Controller with Off-policy RL
